@@ -5,7 +5,7 @@ FROM adoptopenjdk/openjdk11:latest
 RUN mkdir /app
 
 # Uygulama dosyalarını /app dizinine kopyalayalım
-COPY target/jenkins-with-docker-0.0.1-SNAPSHOT.jar /app/my-application.jar
+COPY target/jenkins-with-docker-0.0.1-SNAPSHOT.jar /app/jenkins-with-docker-0.0.1-SNAPSHOT.jar
 
 # Uygulama dizinine geçelim
 WORKDIR /app
@@ -14,4 +14,4 @@ WORKDIR /app
 EXPOSE 8000
 
 # Uygulamayı çalıştıralım
-CMD ["java", "-jar", "my-application.jar"]
+CMD ["java", "-jar", "jenkins-with-docker-0.0.1-SNAPSHOT.jar"]
