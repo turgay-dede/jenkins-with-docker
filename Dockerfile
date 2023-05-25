@@ -5,7 +5,7 @@ FROM adoptopenjdk/openjdk11:latest
 RUN mkdir /app
 
 # Uygulama dosyalarını /app dizinine kopyalayalım
-COPY target/my-application.jar /app/my-application.jar
+COPY target/jenkins-with-docker-0.0.1-SNAPSHOT.jar /app/my-application.jar
 
 # Uygulama dizinine geçelim
 WORKDIR /app
