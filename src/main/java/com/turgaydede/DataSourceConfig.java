@@ -8,13 +8,13 @@ import javax.sql.DataSource;
 
 @Configuration
 public class DataSourceConfig {
-    @Bean
-    public DataSource getDataSource() {
-        return DataSourceBuilder.create()
-                .driverClassName("org.hibernate.dialect.PostgreSQLDialect")
-                .url("jdbc:postgresql://192.168.56.114:5432/test")
-                .username("turgay")
-                .password("123456")
-                .build();
-    }
+//    @Bean
+//    public DataSource getDataSource() {
+//        return DataSourceBuilder.create()
+//                .driverClassName("org.hibernate.dialect.PostgreSQLDialect")
+//                .url("jdbc:postgresql://192.168.56.114:5432/test")
+//                .username("turgay")
+//                .password("123456")
+//                .build();
+//    }
 }
