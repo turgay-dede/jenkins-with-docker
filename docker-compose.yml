@@ -1,0 +1,26 @@
+version: '3.1'
+services:
+  s_myapp:
+    container_name: c_myapp
+    image: turgaydede/jenkinswithdocker
+    ports:
+      - 8000:8000
+    networks:
+      - n_backend
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: test
+      POSTGRES_USER: turgay
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - n_backend
+
+networks:
+  n_backend:
