@@ -1,3 +1,6 @@
+com\turgaydede\CustomerController.class
 com\turgaydede\DataSourceConfig.class
 com\turgaydede\JenkinsWithDockerApplication.class
-com\turgaydede\TestController.class
+com\turgaydede\Customer.class
+com\turgaydede\Customer$CustomerBuilder.class
+com\turgaydede\CustomerRepository.class
