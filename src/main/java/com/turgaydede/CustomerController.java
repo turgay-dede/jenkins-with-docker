@@ -22,6 +22,10 @@ public class CustomerController {
 
     @GetMapping("/customers")
     public List<Customer> getAll() {
-        return customerRepository.findAll();
+        List<Customer> customers = customerRepository.findAll();
+        StringBuilder stringBuilder = new StringBuilder();
+        customers.forEach(x->stringBuilder.append(x.getName()+ '-'));
+//        return stringBuilder.toString();
+        return customers;
     }
 }
